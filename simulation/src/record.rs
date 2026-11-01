@@ -12,7 +12,7 @@ use crate::simulation::{AgentRow, CorrelationRow, MetricsRow, SimulationResult};
 /// runvault 上の実験名．`runvault path --experiment` に渡す値でもある．
 pub const EXPERIMENT: &str = "knoll";
 /// リポジトリの安定 id．git remote の名前とは独立に固定する．
-pub const REPO_ID: &str = "knoll2013";
+pub const REPO_ID: &str = "rep-knoll2013";
 /// 分野．従業員属性・Watts–Strogatz 網・9 機構がいずれも乱数駆動なので `simulation`
 /// (= `master_seed` が必須)．`--decision-mode llm` では LLM が意思決定を担うが，
 /// 測っているのはモデルの安全性ではなく組織集団に創発するサイレンスなので
@@ -52,7 +52,7 @@ pub fn replication() -> Replication {
             "prosocial-climate-independence",
             "Prosocial silence alone is uncorrelated with the climate of silence",
         ))
-        .obsidian_note("研究/98_論文レポート/80-再現実験/実装完了/knoll2013/設計書.md")
+        .obsidian_note("研究/98_論文レポート/80-再現実験/実装完了/rep-knoll2013/設計書.md")
 }
 
 // --------------------------------------------------------------------------- //
